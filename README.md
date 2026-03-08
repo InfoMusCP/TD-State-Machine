@@ -8,7 +8,6 @@ Stop wrestling with complex webs of `Logic CHOPs` and spaghetti code. This `.tox
 
 ## ✨ Features
 * **Zero-Code Friendly:** Configure your entire logic flow visually using Table DATs.
-* **Auto-Initializing:** Just drag and drop the `.tox` into your project. It automatically unpacks its configuration tables and wires itself up.
 * **Built-in Timeouts:** Automate sequences (like attract loops or slideshows) directly from the transition table.
 * **Native CHOP I/O:** Send events by simply naming your input CHOP channels. The FSM automatically outputs active states as `0` or `1` CHOP channels for effortless video/UI routing.
 * **Python God-Mode:** Use the built-in Callback DAT to inject custom `onEntry`, `onExit`, and `onGuard` scripts for advanced hardware validation and API calls.
@@ -42,7 +41,10 @@ Requires four columns: `source`, `event`, `target`, and `timeout`.
 
 ## 🤝 Contributing
 Pull requests are welcome! If you build something cool with this, let me know and remember to mention us.  
+Feel free to open issues for bug reports, feature requests, or just to say hi!
+
 If you like this project, please consider giving it a ⭐!
+
 
 ## 📄 License
 [MIT License](LICENSE)

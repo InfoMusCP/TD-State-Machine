@@ -2,7 +2,7 @@
 
 A robust, table-driven Finite State Machine component for TouchDesigner. 
 
-Stop wrestling with complex webs of `Logic CHOPs` and spaghetti code. This `.tox` allows you to design bulletproof interactive logic using simple Table DATs, complete with built-in timers, CHOP I/O, and advanced Python callbacks.
+Simplify your project architecture by avoiding complex webs of `Logic CHOPs`. This `.tox` allows you to design robust interactive logic using simple Table DATs, complete with built-in timers, CHOP I/O, and advanced Python callbacks.
 
 ![FSM Component Screenshot](media/fsm_screenshot.png)
 

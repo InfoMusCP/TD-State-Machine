@@ -34,10 +34,15 @@ Requires a single column: `state_name`. List all possible states here.
 
 ### Transitions Table
 Requires four columns: `source`, `event`, `target`, and `timeout`.
-* `source`: The state you are leaving.
+* `source`: The state you are leaving. Supports wildcard `*` (allows transitioning from any state to the target state). Wildcard transitions have the highest priority.
 * `event`: The trigger required to leave.
 * `target`: The destination state.
 * `timeout`: (Optional) Float value in seconds. The FSM will automatically trigger the transition after this time elapses.
+
+## ⚠️ State Validation & Error Handling
+To help you build and debug your FSM, the component validates your configuration tables on load:
+* **Missing Source State**: If a source state in the transitions table does not exist in the states table, a **warning** is raised. (Note: The wildcard `*` is a valid source state).
+* **Missing Target State**: If a target state in the transitions table does not exist in the states table, an **error** is raised to prevent entering undefined states.
 
 ## 🤝 Contributing
 Pull requests are welcome! If you build something cool with this, let me know and remember to mention us.  
